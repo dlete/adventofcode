@@ -1,0 +1,154 @@
+initialized copies_of_cards: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+
+Card: 1
+copies_of_cards as encountered by card: 1 before doing anything related to part2 is: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+number of copies of card 1 is: 1
+number_of_price_numbers_in_card: 1 is: 4
+card points part1: 8
+list of card copies after adding card points of card: 1 is: [1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]
+card_points_part2 for card: 1 is: 8
+copies_of_cards after reseting the first element: [0, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]
+copies_of_cards after shifting them one step up: [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 2
+copies_of_cards as encountered by card: 2 before doing anything related to part2 is: [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0]
+number of copies of card 2 is: 2
+number_of_price_numbers_in_card: 2 is: 2
+card points part1: 2
+list of card copies after adding card points of card: 2 is: [2, 4, 4, 2, 1, 1, 1, 1, 1, 1, 0]
+card_points_part2 for card: 2 is: 4
+copies_of_cards after reseting the first element: [0, 4, 4, 2, 1, 1, 1, 1, 1, 1, 0]
+copies_of_cards after shifting them one step up: [4, 4, 2, 1, 1, 1, 1, 1, 1, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 3
+copies_of_cards as encountered by card: 3 before doing anything related to part2 is: [4, 4, 2, 1, 1, 1, 1, 1, 1, 0, 0]
+number of copies of card 3 is: 4
+number_of_price_numbers_in_card: 3 is: 2
+card points part1: 2
+list of card copies after adding card points of card: 3 is: [4, 8, 6, 1, 1, 1, 1, 1, 1, 0, 0]
+card_points_part2 for card: 3 is: 8
+copies_of_cards after reseting the first element: [0, 8, 6, 1, 1, 1, 1, 1, 1, 0, 0]
+copies_of_cards after shifting them one step up: [8, 6, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 4
+copies_of_cards as encountered by card: 4 before doing anything related to part2 is: [8, 6, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+number of copies of card 4 is: 8
+number_of_price_numbers_in_card: 4 is: 1
+card points part1: 1
+list of card copies after adding card points of card: 4 is: [8, 14, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+card_points_part2 for card: 4 is: 8
+copies_of_cards after reseting the first element: [0, 14, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+copies_of_cards after shifting them one step up: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 5
+copies_of_cards as encountered by card: 5 before doing anything related to part2 is: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+number of copies of card 5 is: 14
+number_of_price_numbers_in_card: 5 is: 0
+card points part1: 0
+list of card copies after adding card points of card: 5 is: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+card_points_part2 for card: 5 is: 0
+copies_of_cards after reseting the first element: [0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+copies_of_cards after shifting them one step up: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 6
+copies_of_cards as encountered by card: 6 before doing anything related to part2 is: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+number of copies of card 6 is: 1
+number_of_price_numbers_in_card: 6 is: 0
+card points part1: 0
+list of card copies after adding card points of card: 6 is: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+card_points_part2 for card: 6 is: 0
+copies_of_cards after reseting the first element: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+copies_of_cards after shifting them one step up: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+total_points_part1: 13
+total_points_part2: 28
+total number of scratchcards part2: 30
+initialized copies_of_cards: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+
+Card: 1
+copies_of_cards as encountered by card: 1 before doing anything related to part2 is: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+number of copies of card 1 is: 1
+number_of_price_numbers_in_card: 1 is: 4
+card points part1: 8
+list of card copies after adding card points of card: 1 is: [1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]
+card_points_part2 for card: 1 is: 8
+copies_of_cards after reseting the first element: [0, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]
+copies_of_cards after shifting them one step up: [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 2
+copies_of_cards as encountered by card: 2 before doing anything related to part2 is: [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0]
+number of copies of card 2 is: 2
+number_of_price_numbers_in_card: 2 is: 2
+card points part1: 2
+list of card copies after adding card points of card: 2 is: [2, 4, 4, 2, 1, 1, 1, 1, 1, 1, 0]
+card_points_part2 for card: 2 is: 4
+copies_of_cards after reseting the first element: [0, 4, 4, 2, 1, 1, 1, 1, 1, 1, 0]
+copies_of_cards after shifting them one step up: [4, 4, 2, 1, 1, 1, 1, 1, 1, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 3
+copies_of_cards as encountered by card: 3 before doing anything related to part2 is: [4, 4, 2, 1, 1, 1, 1, 1, 1, 0, 0]
+number of copies of card 3 is: 4
+number_of_price_numbers_in_card: 3 is: 2
+card points part1: 2
+list of card copies after adding card points of card: 3 is: [4, 8, 6, 1, 1, 1, 1, 1, 1, 0, 0]
+card_points_part2 for card: 3 is: 8
+copies_of_cards after reseting the first element: [0, 8, 6, 1, 1, 1, 1, 1, 1, 0, 0]
+copies_of_cards after shifting them one step up: [8, 6, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 4
+copies_of_cards as encountered by card: 4 before doing anything related to part2 is: [8, 6, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+number of copies of card 4 is: 8
+number_of_price_numbers_in_card: 4 is: 1
+card points part1: 1
+list of card copies after adding card points of card: 4 is: [8, 14, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+card_points_part2 for card: 4 is: 8
+copies_of_cards after reseting the first element: [0, 14, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+copies_of_cards after shifting them one step up: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 5
+copies_of_cards as encountered by card: 5 before doing anything related to part2 is: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+number of copies of card 5 is: 14
+number_of_price_numbers_in_card: 5 is: 0
+card points part1: 0
+list of card copies after adding card points of card: 5 is: [14, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+card_points_part2 for card: 5 is: 0
+copies_of_cards after reseting the first element: [0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+copies_of_cards after shifting them one step up: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+
+
+Card: 6
+copies_of_cards as encountered by card: 6 before doing anything related to part2 is: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+number of copies of card 6 is: 1
+number_of_price_numbers_in_card: 6 is: 0
+card points part1: 0
+list of card copies after adding card points of card: 6 is: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+card_points_part2 for card: 6 is: 0
+copies_of_cards after reseting the first element: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+copies_of_cards after shifting them one step up: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+This is the state we hand the copies_of_cards to the next card
+total_points_part1: 13
+total_points_part2: 28
+total number of scratchcards part2: 30
+part 1: total number of points: 13
+part 2: total number of scratchcards: 30
