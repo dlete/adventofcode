@@ -9,7 +9,7 @@ In the root of the repository
 python3 -m venv .venv
 ```
 
-Activate the environemnt
+* Activate the environemnt
 
 ```bash
 source .venv/bin/activate
@@ -23,8 +23,7 @@ pip install -r requirements/base.txt
 
 ## Update
 
-* Update pip
-Whithin the environment
+* Update pip. Execute whithin the environment
 
 ```bash
 python -m pip install --upgrade pip
