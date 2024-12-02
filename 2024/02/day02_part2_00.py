@@ -10,11 +10,11 @@ from typing import TextIO
 
 def file_to_list(f:TextIO) -> list:
     '''
-    Opens a file and returns a list. Each row is an element of the list
+    Opens a file and returns a list with one row in each element of the list
     '''
     # Open file, and put rows/lines in a list
-    #with open('input_day02_example.txt', 'r') as f:
-    with open('input_day02.txt', 'r') as f:
+    with open('input_day02_example.txt', 'r') as f:
+    #with open('input_day02.txt', 'r') as f:
         lines = [line.strip() for line in f]
         #print(lines)
         return lines
@@ -31,6 +31,30 @@ def text_to_list(tx:str) -> list:
     new_list = [ int(element) for element in tx.split() ]
     return new_list
 
+def percolator(l: list, checks_deltas: list, checks_ascending: list, checks_descending: list) -> bool:
+    '''
+    take a list, 
+    find where it fails, 
+    remove the block, 
+    go and chec,
+    if fails, go again removing other block
+
+    you need a coutner
+    '''
+    print("percolator invoked")
+    counts_deltas = checks_deltas.count(False)
+    counts_ascending = checks_ascending.count(False)
+    counts_descending = checks_descending.count(False)
+    print("counts_deltas", counts_deltas)
+    print("invoke check_rules with indexes", counts_deltas, "of count deltas")
+    for i in counts_deltas:
+        li = list(l)
+        li.pop(i)
+        dampener_deltas = check_rules(li)
+        if dampener_deltas == True:
+            break
+        print("percolator status deltas", dampener_deltas)
+
 
 def check_rules(l:list) -> bool:
     '''
@@ -46,24 +70,31 @@ def check_rules(l:list) -> bool:
     '''
     la = list(l)
     lb = list(l)
-    la.pop(0)
-    lb.pop(-1)
+    la.pop(-1)
+    lb.pop(0)
     checks_deltas = [ (0 < abs(b-a) < 4) for b, a in zip(lb, la)]
     checks_ascending = [ (0 < (b-a)) for b, a in zip(lb, la)]
     checks_descending = [ ((b-a) < 0) for b, a in zip(lb, la)]
 
     if False in checks_deltas:
-        status_delta = False
+        #status_delta = False
+        status_delta = percolator(l, checks_deltas, checks_ascending, checks_descending)
     else:
         status_delta = True
     
     if False in checks_ascending:
-        status_ascending = False
+        if (checks_ascending.count(False) > 1):
+            status_ascending = False
+        else:
+            status_ascending = percolator(l, checks_deltas, checks_ascending, checks_descending)
     else:
         status_ascending = True
     
     if False in checks_descending:
-        status_descending = False
+        if (checks_descending.count(False) > 1):
+            status_descending = False
+        else:
+            status_descending = percolator(l, checks_deltas, checks_ascending, checks_descending)
     else:
         status_descending = True
 
@@ -73,54 +104,20 @@ def check_rules(l:list) -> bool:
     else:
         status_growth = False
 
-    print("list a", la)
-    print("list b", lb)
-    print("check deltas", checks_deltas)
-    print("status delta", status_delta)
-    print("check ascencing", checks_ascending)
-    print("status ascending", status_ascending)
-    print("check descending", checks_descending)
-    print("status descending", status_descending)
-    print("status growth", status_growth)
+    #print("list b", lb)
+    #print("list a", la)
+    #print("check deltas", checks_deltas)
+    #print("status delta", status_delta)
+    #print("check ascencing", checks_ascending)
+    #print("status ascending", status_ascending)
+    #print("check descending", checks_descending)
+    #print("status descending", status_descending)
+    #print("status growth", status_growth)
 
     if (status_growth and status_delta) is True:
         return True
     else:
         return False
-
-
-def check_deltas(l:list) -> bool:
-    '''
-    Checks if the absolute value of the difference between 
-    two intergers is between 1 and 3 
-
-    Make two copies of the input list
-    remove the first element of one
-    remove the last element of the other
-    delete one list from the other checking the rule operation wise
-    '''
-    la = list(l)
-    lb = list(l)
-    la.pop(0)
-    lb.pop(-1)
-    checks_deltas = [ (0 < abs(b-a) < 4) for b, a in zip(lb, la)]
-
-    if False in checks_deltas:
-        status_deltas = False
-    else:
-        status_deltas = True
-    
-    print("list a", la)
-    print("list b", lb)
-    print("check deltas", checks_deltas)
-    print("status delta", status_deltas)
-
-    if status_deltas is True:
-        return True
-    else:
-        return False
-
-
 
 
 valid_records = 0
@@ -130,7 +127,7 @@ for line in lines:
     print("record:", record)
 
     record_status = check_rules(record)
-    print("record status", record_status)
+    print("record status", record_status, "\n")
     if record_status == True:
         valid_records += 1
 
